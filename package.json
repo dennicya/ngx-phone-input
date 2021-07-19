@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:lib": "ng build ngx-phone-input"
+    "lib:build": "ng build ngx-phone-input",
+    "lib:pack": "cd dist/ngx-phone-input && npm pack",
+    "lib:publish": "cd dist/ngx-phone-input && npm publish --access public"
   },
   "private": true,
   "dependencies": {

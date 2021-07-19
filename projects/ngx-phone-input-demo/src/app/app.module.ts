@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NgxPhoneInputModule } from 'ngx-phone-input';
+import { NgxPhoneInputModule } from "../../../ngx-phone-input/src/lib/ngx-phone-input.module";
+// import { NgxPhoneInputModule } from 'ngx-phone-input';
 
 @NgModule({
   declarations: [
