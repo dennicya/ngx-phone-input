@@ -1,27 +1,80 @@
-# NgxPhoneInput
+# Angular 2+ wrapper for intl-tel-input
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+# Demo
+...
 
-## Development server
+# Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run following command to install ngx-phone-input
 
-## Code scaffolding
+```sh
+npm install @dennicya/ngx-phone-input intl-tel-input --save
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+After install, you need to add **intlTelInput.css**, **intlTelInput.min.js**, **utils.js**.
 
-## Build
+In case of @angular/cli, add 2 files in your `angular.json`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+For example,
 
-## Running unit tests
+- Include **intlTelInput.css** in "styles" at your `angular.json` file  :
+```
+  "styles": [
+    ...
+    "node_modules/ngx-phone-input/assets/ngx-phone-input.scss",,
+    ...
+  ]
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Include **intlTelInput.min.js**, **utils.js** in "scripts" at your `angular.json` file  :
+```
+  "scripts": [
+    ...
+    "node_modules/intl-tel-input/build/js/intlTelInput.min.js"
+    ...
+  ]
+```
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Now add Ng2TelInputModule into your AppModule. For example,
 
-## Further help
+```js
+import {NgxPhoneInputModule} from '@dennicya/ngx-phone-input';
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Once done, we are ready to use this library.
+
+# How to use?
+
+In order to use this directive, you need to add "ngxPhoneInput" directive with "[phoneInputOptions]" options to your text field. For example,
+
+```html
+<input type="text"
+       ngxPhoneInput
+       [phoneInputOptions]="{initialCountry: 'ke'}"
+       (hasError)="hasError($event)"
+       (phoneOutput)="getNumber($event)"
+       (countryChange)="onCountryChange($event)"
+       (intlTelInputObject)="telInputObject($event)" />
+```
+
+# Note
+**(intlTelInputObject)** returns **intl-tel-input** instance.
+By default this package get **utils.js** from below link:-
+https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.js
+But you can also provide your utilsScript file by using below options:-
+
+[phoneInputOptions]="{initialCountry: 'in', utilsScript: 'node_modules/intl-tel-input/build/js/utils.js'}"
+
+# How to use this instance?
+You can use it perform any functionality that is available on intl-tel-input plugin. **For example**, in your component,
+```
+telInputObject(obj) {
+    console.log(obj);
+    obj.setCountry('ke');
+  }
+```
+
+# Improving the Library
+
+...

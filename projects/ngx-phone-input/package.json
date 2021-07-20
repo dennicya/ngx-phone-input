@@ -1,6 +1,21 @@
 {
   "name": "@dennicya/ngx-phone-input",
   "version": "0.0.1",
+  "description": "An Angular 2 wrapper for intl-tel-input library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennicya/ngx-phone-input.git"
+  },
+  "keywords": [
+    "Angular",
+    "country",
+    "intl-tel-input"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "git+https://github.com/dennicya/ngx-phone-input.git"
+  },
+  "homepage": "https://github.com/dennicya/ngx-phone-input#readme",
   "peerDependencies": {
     "@angular/common": "^12.1.1",
     "@angular/core": "^12.1.1"
