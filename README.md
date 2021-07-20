@@ -21,7 +21,7 @@ For example,
 ```
   "styles": [
     ...
-    "node_modules/ngx-phone-input/assets/ngx-phone-input.scss",,
+    "node_modules/@dennicya/ngx-phone-input/assets/ngx-phone-input.scss",,
     ...
   ]
 ```
