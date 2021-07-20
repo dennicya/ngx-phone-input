@@ -1,6 +1,6 @@
 {
   "name": "@dennicya/ngx-phone-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An Angular 2 wrapper for intl-tel-input library",
   "repository": {
     "type": "git",
