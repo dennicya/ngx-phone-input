@@ -1,4 +1,4 @@
-# Angular 2+ wrapper for intl-tel-input
+# Angular wrapper for intl-tel-input
 
 # Demo
 ...
