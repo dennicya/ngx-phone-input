@@ -12,21 +12,20 @@
   </div>
 
   <hr>
-  <h1>Material (WIP)</h1>
+  <h1>Boostrap</h1>
 
   <form>
-    <mat-form-field>
-      <mat-label class="mat-input-label">Phone Number</mat-label>
+    <div class="mb-3">
 
-      <input matInput ngxPhoneInput
+      <input ngxPhoneInput class="form-control"
              type="tel"
              [phoneInputOptions]="{initialCountry: 'ke', preferredCountries:['ke', 'ug', 'tz']}"
              (intlTelInputObject)="telInputObject($event)"/>
-    </mat-form-field>
+    </div>
   </form>
 
   <hr>
-  <h1>Material in Tabbed pane (WIP)</h1>
+  <h1>Material (WIP)</h1>
 
   <div class="mat">
 
