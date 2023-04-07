@@ -12,7 +12,7 @@ import {
 import { isPlatformBrowser } from '@angular/common';
 
 declare const window: any;
-const defaultUtilScript = 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.js';
+const defaultUtilScript = 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/utils.js';
 
 @Directive({
   selector: '[ngxPhoneInput]',

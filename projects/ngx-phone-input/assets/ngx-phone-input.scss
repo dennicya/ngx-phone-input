@@ -10,21 +10,21 @@
 
 .field-group {
   position: relative;
-  margin-top: 10px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .mat-floating-label {
   position: absolute;
-  top: -14px;
+  top: -3px;
   left: 55px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #999;
-  background: #ffffff;
   pointer-events: none;
   transition: transform 0.2s ease-out;
   transform-origin: top left;
-  padding: 0 5px 0 5px;
+  padding: 0;
 }
 
 .mat-text-field {
@@ -33,8 +33,19 @@
   height: 56px;
   border: 1px solid #999;
   border-radius: 4px;
-  background-color: #fff;
-  padding: 16px;
+  background-color: #F5F5F5;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.mat-text-field-fill {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid #999;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 
@@ -48,3 +59,4 @@
   background-color: transparent;
   outline: none;
 }
+

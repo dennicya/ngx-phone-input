@@ -38,6 +38,16 @@
       </div>
       <label class="mat-floating-label">Phone Number</label>
     </div>
+
+    <div class="field-group">
+      <div class="mat-text-field-fill">
+        <input ngxPhoneInput class="mat-text-field__input"
+               type="tel"
+               [phoneInputOptions]="{initialCountry: 'ug', preferredCountries:['ke', 'ug', 'tz']}"
+               (intlTelInputObject)="telInputObject($event)"/>
+      </div>
+      <label class="mat-floating-label">Phone Number</label>
+    </div>
   </form>
 
 </div>
