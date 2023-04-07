@@ -25,39 +25,20 @@
   </form>
 
   <hr>
-  <h1>Material (WIP)</h1>
+  <h1>Material Themed</h1>
 
-  <div class="mat">
+  <form novalidate>
 
-
-    <mat-tab-group dynamicHeight animationDuration="0ms">
-
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon>phone</mat-icon>
-          Phone Number
-        </ng-template>
-
-      </mat-tab>
-    </mat-tab-group>
-
-    <form novalidate>
-      <div style="margin-right: 20px">
-        <mat-form-field>
-          <mat-label class="mat-input-label">Phone Number</mat-label>
-
-          <input matInput ngxPhoneInput
-                 type="tel"
-                 [phoneInputOptions]="{
-                              initialCountry: 'ke',
-                              preferredCountries:['ke', 'ug', 'tz'],
-                              utilsScript: './node_modules/intl-tel-input/build/js/utils.js'}"
-                 (intlTelInputObject)="telInputObject($event)"/>
-        </mat-form-field>
+    <div class="field-group">
+      <div class="mat-text-field">
+        <input ngxPhoneInput class="mat-text-field__input"
+               type="tel"
+               [phoneInputOptions]="{initialCountry: 'ke', preferredCountries:['ke', 'ug', 'tz']}"
+               (intlTelInputObject)="telInputObject($event)"/>
       </div>
-
-    </form>
-  </div>
+      <label class="mat-floating-label">Phone Number</label>
+    </div>
+  </form>
 
 </div>
 

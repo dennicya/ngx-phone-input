@@ -1,5 +1,50 @@
-@import "~intl-tel-input/build/css/intlTelInput.css";
+@import "intl-tel-input/build/css/intlTelInput.css";
 
 .mat-input-label {
   padding-left: 54px !important;
+}
+
+.iti {
+  width: 100%;
+}
+
+.field-group {
+  position: relative;
+  margin-top: 10px;
+}
+
+.mat-floating-label {
+  position: absolute;
+  top: -14px;
+  left: 55px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999;
+  background: #ffffff;
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+  transform-origin: top left;
+  padding: 0 5px 0 5px;
+}
+
+.mat-text-field {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.mat-text-field__input {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
